@@ -5,11 +5,8 @@ const displayPosts = (posts) => {
 
     // get post container 
     const postContainer = document.getElementById('posts-container');
-
     postContainer.innerHTML = '';
     posts.forEach(post => {
-
-
         // create div 
         const div = document.createElement('div');
 
@@ -17,7 +14,8 @@ const displayPosts = (posts) => {
         div.innerHTML = `
         <div class="indicator">
         <span
-            class="indicator-item badge-secondary badge ${post.isActive ? 'green': 'red' } p-[6px] h-[6px] border-2 border-white"></span>
+            class="indicator-item badge-secondary badge 
+            ${post.isActive ? 'green': 'red' } p-[6px] h-[6px] border-2 border-white"></span>
         <div class="grid w-20 h-20 bg-base-300 place-items-center rounded-2xl">
             <img class="rounded-2xl" src="${post.image}">
         </div>
@@ -70,16 +68,13 @@ const displayPosts = (posts) => {
         </div>
     </div>
         `
-
         postContainer.appendChild(div);
-
-
 
     })
 }
 
 
-
+// display Latest Posts 
 const displayLatestPosts = (latestPosts) => {
 
     const latestPostContainer = document.getElementById('latest-post-container');
@@ -117,15 +112,14 @@ const displayLatestPosts = (latestPosts) => {
         `
         latestPostContainer.appendChild(div)
     })
-   
+
 }
-
-
 
 
 let countAddPost = 0;
 
 const handleAddPost = () => {
+
      // handle add read post title and view 
      const addPosts = document.getElementsByClassName('add-post');
 

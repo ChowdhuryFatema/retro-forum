@@ -19,6 +19,7 @@ const loadCategory = async (catName) => {
     const posts = data.posts;
 
     displayPosts(posts)
+    toggleLoadingSpinner(false);
     handleAddPost();
 
 }
@@ -36,13 +37,29 @@ loadLatestPosts()
 
 
 
-
+// handle search 
 const handleSearch = (catName) => {
-    const searchField = document.getElementById('search-field');
-    const searchFieldText = searchField.value;
 
+    toggleLoadingSpinner(true);
+
+    const searchField = document.getElementById('search-field');
+
+    const searchFieldText = searchField.value;
     searchField.value = '';
+
     loadCategory(searchFieldText);
+}
+
+// toggle Loading Spinner 
+const toggleLoadingSpinner = (isLoading) => {
+
+    const loadingSpinner = document.getElementById('loading-spinner');
+   if(isLoading){
+    loadingSpinner.classList.remove('hidden');
+   }
+   else{
+    loadingSpinner.classList.add('hidden');
+   }
 }
 
 
