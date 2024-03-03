@@ -19,6 +19,19 @@ const loadCategory = async (catName) => {
 
 }
 
+const loadLatestPosts = async () => {
+    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts')
+    const data = await res.json()
+    const latestPosts = data;
+    
+    displayLatestPosts(latestPosts)
+}
+
+loadLatestPosts()
+
+
+
+
 const handleSearch = (catName) => {
     const searchField = document.getElementById('search-field');
     const searchFieldText = searchField.value;
