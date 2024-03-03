@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Forum</title>
-    <!-- fontawesome  -->
-    <script src="https://kit.fontawesome.com/111ef2b513.js" crossorigin="anonymous"></script>
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- tailwindcss  -->
@@ -18,7 +16,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        "title-black": '#12132D',
                     }
                 }
             }
@@ -72,31 +70,31 @@
             </div>
             <div class="navbar-end">
                 <ul class="menu menu-horizontal px-1 hidden lg:flex">
-                    <li><a class="bg-[#0307121A] rounded-full mx-2 border border-[#12132D99] tooltip hover:tooltip-open tooltip-top" data-tip="Home"> <svg
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-5 h-8">
+                    <li><a class="bg-[#0307121A] rounded-full mx-2 border border-[#12132D99] tooltip hover:tooltip-open tooltip-top"
+                            data-tip="Home"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-8">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                             </svg>
                         </a></li>
 
-                    <li><a class="bg-[#0307121A] rounded-full mx-2 border border-[#12132D99] tooltip hover:tooltip-open tooltip-top" data-tip="edit"><svg
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-5 h-8">
+                    <li><a class="bg-[#0307121A] rounded-full mx-2 border border-[#12132D99] tooltip hover:tooltip-open tooltip-top"
+                            data-tip="edit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-8">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
                             </svg>
                         </a></li>
-                    <li><a class="bg-[#0307121A] rounded-full mx-2 border border-[#12132D99] tooltip hover:tooltip-open tooltip-top" data-tip="add"><svg
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-5 h-8">
+                    <li><a class="bg-[#0307121A] rounded-full mx-2 border border-[#12132D99] tooltip hover:tooltip-open tooltip-top"
+                            data-tip="add"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-8">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
                             </svg>
                         </a></li>
-                    <li><a class="bg-[#0307121A] rounded-full mx-2 border border-[#12132D99] tooltip hover:tooltip-open tooltip-top" data-tip="flag"><svg
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-5 h-8">
+                    <li><a class="bg-[#0307121A] rounded-full mx-2 border border-[#12132D99] tooltip hover:tooltip-open tooltip-top"
+                            data-tip="flag"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-5 h-8">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
                             </svg>
@@ -123,25 +121,27 @@
                             </div>
                             <div class="flex justify-between gap-5 *:text-lg *:font-semibold *:font-mulish">
                                 <p>Forum</p>
-                                <span>01</span>
+                                <span>02</span>
                             </div>
                             <div class="flex justify-between gap-5 *:text-lg *:font-semibold *:font-mulish">
                                 <p>Topics</p>
-                                <span>01</span>
+                                <span>03</span>
                             </div>
                             <div class="flex justify-between gap-5 *:text-lg *:font-semibold *:font-mulish">
                                 <p>Replies</p>
-                                <span>01</span>
+                                <span>04</span>
                             </div>
                         </div>
                     </div>
                     <div class="lg:w-1/2 *:text-center *:lg:text-left px-2 md:px-10 lg:px-0 mt-5 lg:mt-0">
-                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[45px] lg:leading-[65px]">Welcome to the <span class="retro">ReTro</span>
+                        <h1
+                            class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[45px] lg:leading-[65px]">
+                            Welcome to the <span class="retro">ReTro</span>
                             Forum</h1>
                         <p class="w-full lg:w-4/5 py-6 text-lg text-white opacity-80">Share your favorite opinion and
                             win and wp forum coffee mug!</p>
                         <div>
-                            <div class="relative bg-white rounded-full w-4/5 mx-auto lg:mx-0">
+                            <div class="relative bg-white rounded-full w-11/12 mx-auto lg:mx-0">
                                 <input
                                     class="bg-white pl-3 md:pl-4 py-3 text-sm md:text-[16px] outline-none rounded-full h-full w-full"
                                     type="text" placeholder="Search here anything">
@@ -154,8 +154,298 @@
             </div>
         </section>
         <!-- hero section ends here  -->
+        <!-- Discuss section starts here  -->
+        <section class="container mx-auto px-5 md:px-24 mt-10 md:mt-20">
+            <div class="heading *:text-center my-5 space-y-4">
+                <h2 class="font-extrabold text-4xl">Let’s Discuss</h2>
+                <p class="w-full md:w-3/4 lg:w-1/2 mx-auto">Yes, you can run unit tests and view the results directly
+                    within the app. The
+                    integrated testing features allow for a streamlined .</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-5">
+                <div class="col-auto lg:col-span-2">
+
+                    <div
+                        class="flex flex-col md:flex-row gap-5 bg-[#F3F3F5] p-8 rounded-2xl my-5 border border-[#797DFC1A]">
+                        <div class="indicator">
+                            <span
+                                class="indicator-item badge badge-secondary p-[6px] h-[6px] border-2 border-white"></span>
+                            <div class="grid w-20 h-20 bg-base-300 place-items-center rounded-xl">content</div>
+                        </div>
+                        <div>
+                            <div class="border-b-2 border-dashed boder-[#12132D40] space-y-2 pb-4">
+
+                                <ul class="*:inline-block">
+                                    <li><a class="text-[#12132DCC] font-semibold mr-5" href="#"># Music</a></li>
+                                    <li><a class="text-[#12132DCC] font-semibold" href="#">Author : Awlad Hossain</a>
+                                    </li>
+                                </ul>
+                                <h3 class="text-lg md:text-xl font-bold text-title-black">10 Kids Unaware of Their
+                                    Halloween Costume</h3>
+                                <p class="pt-1">It’s one thing to subject yourself to ha Halloween costume mishap
+                                    because, hey that’s
+                                    your prerogative</p>
+                            </div>
+                            <div class="flex justify-between gap-5 mt-4">
+                                <ul class="flex gap-3 md:gap-8">
+                                    <li class="flex gap-1 md:gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                        </svg>
+                                        <span>560</span>
+                                    </li>
+                                    <li class="flex gap-1 md:gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                        </svg>
+
+                                        <span>1,568</span>
+                                    </li>
+                                    <li class="flex gap-1 md:gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        </svg>
+
+                                        <span>5 min</span>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <img src="images/message.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col md:flex-row gap-5 bg-[#F3F3F5] p-8 rounded-2xl my-5 border border-[#797DFC1A]">
+                        <div class="indicator">
+                            <span
+                                class="indicator-item badge badge-secondary p-[6px] h-[6px] border-2 border-white"></span>
+                            <div class="grid w-20 h-20 bg-base-300 place-items-center rounded-xl">content</div>
+                        </div>
+                        <div>
+                            <div class="border-b-2 border-dashed boder-[#12132D40] space-y-2 pb-4">
+
+                                <ul class="*:inline-block">
+                                    <li><a class="text-[#12132DCC] font-semibold mr-5" href="#"># Music</a></li>
+                                    <li><a class="text-[#12132DCC] font-semibold" href="#">Author : Awlad Hossain</a>
+                                    </li>
+                                </ul>
+                                <h3 class="text-lg md:text-xl font-bold text-title-black">10 Kids Unaware of Their
+                                    Halloween Costume</h3>
+                                <p class="pt-1">It’s one thing to subject yourself to ha Halloween costume mishap
+                                    because, hey that’s
+                                    your prerogative</p>
+                            </div>
+                            <div class="flex justify-between gap-5 mt-4">
+                                <ul class="flex gap-3 md:gap-8">
+                                    <li class="flex gap-1 md:gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                        </svg>
+                                        <span>560</span>
+                                    </li>
+                                    <li class="flex gap-1 md:gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                        </svg>
+
+                                        <span>1,568</span>
+                                    </li>
+                                    <li class="flex gap-1 md:gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        </svg>
+
+                                        <span>5 min</span>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <img src="images/message.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-auto lg:col-span-1 mt-5">
+                    <div class="bg-[#12132D0D] p-5 rounded-2xl">
+                        <div class="grid grid-cols-3 justify-between gap-1">
+                            <div class="col-span-1">
+                                <h3 class="text-xl font-bold text-title-black">Title</h3>
+                            </div>
+                            <div class="col-span-2 ml-auto">
+                                <div class="flex">
+                                    <img class="mr-2" src="images/check.png" alt="">
+                                    <p>Mark as read (4)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between bg-white px-3 py-5 rounded-xl mt-3">
+                            <div>
+                                <h3 class="font-bold text-title-black">10 Kids Unaware of Their Halloween Costume</h3>
+                            </div>
+                            <div class="flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                                <span>1,568</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between bg-white px-3 py-5 rounded-xl mt-3">
+                            <div>
+                                <h3 class="font-bold text-title-black">10 Kids Unaware of Their Halloween Costume</h3>
+                            </div>
+                            <div class="flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                                <span>1,568</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between bg-white px-3 py-5 rounded-xl mt-3">
+                            <div>
+                                <h3 class="font-bold text-title-black">10 Kids Unaware of Their Halloween Costume</h3>
+                            </div>
+                            <div class="flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                                <span>1,568</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Discuss section ends here  -->
+        <!-- Join Forum section starts here  -->
+        <section class="container mx-auto px-5 md:px-24 mt-10 md:mt-20">
+            <div class="hero p-3 md:p-10  rounded-3xl bg-[#12132D]">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img src="images/joinforum.png" class="w-full lg:w-4/5" />
+                    <div>
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Join Our Forum</h1>
+                        <p class="py-6 text-white">Share your favorite opinion and win and wp forum coffee mug! Yes, you
+                            can run unit tests and view the results directly within the app. </p>
+                        <a
+                            class="btn bg-[#797DFC] hover:bg-[#5055f1] text-white rounded-full font-semibold font-mulish border-0 text-sm lg:text-lg px-5 lg:px-10">Registered
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Join Forum section ends here  -->
+        <!-- Latest Posts section starts here  -->
+        <section class="container mx-auto px-5 md:px-24 mt-10 md:mt-20">
+            <div class="heading *:text-center my-10 space-y-4">
+                <h2 class="font-extrabold text-4xl">Latest Posts</h2>
+                <p class="w-full md:w-3/4 lg:w-1/2 mx-auto">Yes, you can run unit tests and view the results directly
+                    within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                <div class="p-5 border border-[#12132D26] rounded-2xl space-y-3">
+                    <img class="rounded-2xl" src="images/card.jpg" alt="">
+                    <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                        </svg>
+                        <p>29 January 2024</p>
+                    </div>
+                    <h3 class="font-extrabold md:text-lg text-title-black">What will a mars habitat force that impact in
+                        our daily life!!!</h3>
+                    <p>Yes, you can run unit tests and view the results directly within the app. </p>
+                    <div class="flex gap-4">
+                        <div>
+                            <img class="size-10 rounded-full"
+                                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <div>
+                            <h4 class="text-title-black font-extrabold">Cameron Williamson</h4>
+                            <p class="text-sm">Unknown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 border border-[#12132D26] rounded-2xl space-y-3">
+                    <img class="rounded-2xl" src="images/card.jpg" alt="">
+                    <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                        </svg>
+                        <p>29 January 2024</p>
+                    </div>
+                    <h3 class="font-extrabold md:text-lg text-title-black">What will a mars habitat force that impact in
+                        our daily life!!!</h3>
+                    <p>Yes, you can run unit tests and view the results directly within the app. </p>
+                    <div class="flex gap-4">
+                        <div>
+                            <img class="size-10 rounded-full"
+                                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <div>
+                            <h4 class="text-title-black font-extrabold">Cameron Williamson</h4>
+                            <p class="text-sm">Unknown</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Latest Posts section ends here  -->
     </main>
-    <footer>
+    <footer class="bg-[linear-gradient(180.00deg,rgba(18,19,45,0.05),rgba(18,19,45,0)100%)]">
+        <div class="container mx-auto px-5 md:px-24 mt-10 md:mt-20">
+            <div class="border-b-1 border-[#30325E1A] *:text-center">
+                <div class="w-1/2">
+                    <h3>ReTro</h3>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC
+                </p>
+                <div class="flex gap-3">
+                    <img src="images/icon/twitter.png" alt="">
+                    <img src="images/icon/facebook.png" alt="">
+                    <img src="images/icon/instagram.png" alt="">
+                    <img src="images/icon/github.png" alt="">
+                </div>
+                </div>
+            </div>
+            <div>
+                <p class="text-center">2017, All Rights Reserved.</p>
+            </div>
+        </div>
 
     </footer>
     <script src="js/script.js"></script>
