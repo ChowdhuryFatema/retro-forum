@@ -1,11 +1,16 @@
+
+// display all post 
+
 const displayPosts = (posts) => {
 
     // get post container 
     const postContainer = document.getElementById('posts-container');
 
     posts.forEach(post => {
-        console.log(post)
+
+        // create div 
         const div = document.createElement('div');
+
         div.classList = `flex flex-col md:flex-row gap-5 bg-[#F3F3F5] p-8 rounded-2xl my-5 border border-[#797DFC1A]`
         div.innerHTML = `
         <div class="indicator">
@@ -57,7 +62,7 @@ const displayPosts = (posts) => {
                     <span>${post.posted_time} min</span>
                 </li>
             </ul>
-            <div>
+            <div class="add-post">
                 <img src="images/message.png" alt="">
             </div>
         </div>
@@ -66,4 +71,42 @@ const displayPosts = (posts) => {
 
         postContainer.appendChild(div);
     })
+}
+
+
+
+const handleAddPost = () => {
+     // handle add read post title and view 
+     const addPosts = document.getElementsByClassName('add-post');
+
+     for (let addPost of addPosts) {
+         addPost.addEventListener('click', function (e) {
+             const postTitle = e.target.parentNode.parentNode.parentNode.childNodes[1].childNodes[3].innerText;
+             
+             const postView = e.target.parentNode.parentNode.childNodes[1].childNodes[3].childNodes[3].innerText;
+ 
+             const addPostContainer = document.getElementById('add-post-container')
+             const div = document.createElement('div');
+             div.classList = `flex justify-between bg-white px-3 py-5 rounded-xl mt-3`
+ 
+             div.innerHTML = `
+             
+                             <div>
+                                 <h3 class="font-bold text-title-black">${postTitle}</h3>
+                             </div>
+                             <div class="flex gap-2">
+                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                     <path stroke-linecap="round" stroke-linejoin="round"
+                                         d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                     <path stroke-linecap="round" stroke-linejoin="round"
+                                         d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                 </svg>
+                                 <span>${postView}</span>
+                             </div>
+             
+             `
+             addPostContainer.appendChild(div)
+         })
+     }
 }
