@@ -22,3 +22,9 @@ h2, h3, h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}

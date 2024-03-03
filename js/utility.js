@@ -9,6 +9,7 @@ const displayPosts = (posts) => {
     postContainer.innerHTML = '';
     posts.forEach(post => {
 
+
         // create div 
         const div = document.createElement('div');
 
@@ -16,7 +17,7 @@ const displayPosts = (posts) => {
         div.innerHTML = `
         <div class="indicator">
         <span
-            class="indicator-item badge badge-secondary p-[6px] h-[6px] border-2 border-white"></span>
+            class="indicator-item badge-secondary badge ${post.isActive ? 'green': 'red' } p-[6px] h-[6px] border-2 border-white"></span>
         <div class="grid w-20 h-20 bg-base-300 place-items-center rounded-2xl">
             <img class="rounded-2xl" src="${post.image}">
         </div>
@@ -71,6 +72,9 @@ const displayPosts = (posts) => {
         `
 
         postContainer.appendChild(div);
+
+
+
     })
 }
 
@@ -115,9 +119,6 @@ const displayLatestPosts = (latestPosts) => {
     })
    
 }
-
-
-
 
 
 
