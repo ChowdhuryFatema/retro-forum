@@ -142,10 +142,10 @@
                             win and wp forum coffee mug!</p>
                         <div>
                             <div class="relative bg-white rounded-full w-11/12 mx-auto lg:mx-0">
-                                <input
+                                <input id="search-field"
                                     class="bg-white pl-3 md:pl-4 py-3 text-sm md:text-[16px] outline-none rounded-full h-full w-full"
                                     type="text" placeholder="Search here anything">
-                                <button
+                                <button onclick="handleSearch()"
                                     class="absolute right-1 md:right-[2px] top-[2px] btn rounded-full bg-[#797DFC] hover:bg-[#5055f1] text-white min-h-0 h-9 md:h-10">Search</button>
                             </div>
                         </div>
@@ -164,9 +164,7 @@
             </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-5">
                 <div id="posts-container" class="col-auto lg:col-span-2">
-                </div>
-
-                
+                </div>                
                 <div class="col-auto lg:col-span-1 mt-5">
                     <div class="bg-[#12132D0D] p-5 rounded-2xl">
                         <div class="grid grid-cols-3 justify-between gap-1">
@@ -176,12 +174,11 @@
                             <div class="col-span-2 ml-auto">
                                 <div class="flex">
                                     <img class="mr-2" src="images/check.png" alt="">
-                                    <p>Mark as read (4)</p>
+                                    <p>Mark as read ( <span id="post-add-count">0</span> )</p>
                                 </div>
                             </div>
                         </div>
                         <div id="add-post-container">
-
                         </div>
                     </div>
                 </div>
