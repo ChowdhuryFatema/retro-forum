@@ -12,19 +12,19 @@ const displayPosts = (posts) => {
 
         div.classList = `flex flex-col md:flex-row gap-5 bg-[#F3F3F5] p-8 rounded-2xl my-5 border border-[#797DFC1A]`
         div.innerHTML = `
-        <div class="indicator">
-        <span
-            class="indicator-item badge-secondary badge 
-            ${post.isActive ? 'green': 'red' } p-[6px] h-[6px] border-2 border-white"></span>
-        <div class="grid w-20 h-20 bg-base-300 place-items-center rounded-2xl">
-            <img class="rounded-2xl" src="${post.image}">
+        <div class="indicator mx-auto md:mx-0">
+            <span
+                class="indicator-item badge-secondary badge 
+                ${post.isActive ? 'green': 'red' } p-[6px] h-[6px] border-2 border-white"></span>
+            <div class="grid w-20 h-20 bg-base-300 place-items-center rounded-2xl">
+                <img class="rounded-2xl" src="${post.image}">
+            </div>
         </div>
-    </div>
     <div class="w-full">
-        <div class="border-b-2 border-dashed border-[#12132D40] space-y-2 pb-4">
+        <div class="border-b-2 border-dashed border-[#12132D40] *:text-center *:md:text-left space-y-2 pb-4">
 
-            <ul class="*:inline-block">
-                <li><a class="text-[#12132DCC] font-semibold mr-5" href="#"># ${post.category}</a></li>
+            <ul class="*:md:inline-block ">
+                <li><a class="text-[#12132DCC] font-semibold mr-6" href="#"># ${post.category}</a></li>
                 <li><a class="text-[#12132DCC] font-semibold" href="#">Author : ${post.author?.name}</a>
                 </li>
             </ul>
@@ -69,22 +69,33 @@ const displayPosts = (posts) => {
     </div>
         `
         postContainer.appendChild(div);
-
     })
+
+
+    const notFound = document.getElementById('not-found');
+    if(posts <= 0){
+        notFound.classList.remove('hidden')
+    }
+    else {
+        notFound.classList.add('hidden')
+    }
+
 }
 
 
 // display Latest Posts 
 const displayLatestPosts = (latestPosts) => {
 
+    // get latest post container
     const latestPostContainer = document.getElementById('latest-post-container');
+
     latestPosts.forEach(latestPost =>{
 
+        // create div 
         const div = document.createElement('div')
         div.classList = `p-5 border border-[#12132D26] rounded-2xl space-y-3`
     
         div.innerHTML = `
-        
         <img class="rounded-2xl" src="${latestPost.cover_image}" alt="">
         <div class="flex gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -110,6 +121,7 @@ const displayLatestPosts = (latestPosts) => {
         </div>
         
         `
+        // appending child 
         latestPostContainer.appendChild(div)
     })
 

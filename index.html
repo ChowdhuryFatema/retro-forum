@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InnoVation Forum</title>
-    <!-- daisyui -->
+    <!-- daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- tailwindcss  -->
+    <!-- tailwind css  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css  -->
     <link rel="stylesheet" href="style.css">
@@ -162,12 +162,25 @@
                     within the app. The
                     integrated testing features allow for a streamlined .</p>
             </div>
+
+            <!-- loading spinner  -->
             <div id="loading-spinner" class="text-center hidden">
                 <span class="loading loading-bars loading-lg"></span>
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-extrabold">Loading...</h2>
             </div>
-                <div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-5">
-                <div id="posts-container" class="col-auto lg:col-span-2">
-                </div>                
+
+            <!-- Discuss post card  -->
+                <div class="relative grid grid-cols-1 lg:grid-cols-3 justify-between gap-5">
+                    <!-- card container  -->
+                        <div id="posts-container" class="col-auto lg:col-span-2">
+                           
+                        </div> 
+                        <!-- post not not found  -->
+                        <div id="not-found" class="md:mt-5 col-auto lg:col-span-2 hidden">
+                            <img src="images/not-found.png" alt="">
+                        </div> 
+
+                        <!-- Add read card  -->
                 <div class="col-auto lg:col-span-1 mt-5">
                     <div class="bg-[#12132D0D] p-5 rounded-2xl">
                         <div class="grid grid-cols-3 justify-between gap-1">
@@ -212,9 +225,12 @@
                 <p class="w-full md:w-3/4 lg:w-1/2 mx-auto">Yes, you can run unit tests and view the results directly
                     within the app. The integrated testing features allow for a streamlined .</p>
             </div>
+            
+            <!-- Latest Posts container  -->
             <div id="latest-post-container" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
                 
             </div>
+
         </section>
         <!-- Latest Posts section ends here  -->
     </main>
