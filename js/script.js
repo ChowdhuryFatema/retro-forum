@@ -62,8 +62,7 @@ loadLatestPosts()
 
 // handle search 
 const handleSearch = () => {
-    const postContainer = document.getElementById('posts-container');
-    postContainer.innerHTML = '';
+    
 
     // get search field
     const searchField = document.getElementById('search-field');
@@ -73,6 +72,10 @@ const handleSearch = () => {
     if (searchFieldText === "") {
         return alert('Please provide a category name!!!')
     }
+
+    const postContainer = document.getElementById('posts-container');
+    postContainer.innerHTML = '';
+
     toggleLoadingSpinner(true);
     searchField.value = '';
 
